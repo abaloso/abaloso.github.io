@@ -15,22 +15,29 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+
 }
 
-header nav ul {
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #06111c;
+}
+
+nav ul {
+    color: #fff;
+    padding: 1rem 0;
     list-style: none;
     text-align: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
@@ -44,8 +51,7 @@ header nav ul li a {
 .section {
     display: flex;
     flex-wrap: wrap;
-
-    margin-bottom: 3rem;
+    margin: 8rem 0;
     justify-content: center;
 }
 
@@ -89,16 +95,29 @@ header nav ul li a {
     text-align: center;
 }
 
+hr.rounded {
+    border-top: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
 @media (min-width: 769px) {
-    .section:nth-child(even) {
+    .section:nth-child(3) {
         flex-direction: row-reverse;
     }
 
 }
 
-@media (min-width: 2800px) {
+@media (min-width: 2049px) {
     .container {
-        max-width: 2000px;
+        max-width: 1800px;
     }
 
     .section img {
@@ -112,7 +131,7 @@ header nav ul li a {
         padding: 1rem 6rem 1rem 1rem;
     }
 
-    #locTwoDesc{
+    #locTwoDesc {
         text-align: left;
         padding: 1rem 1rem 1rem 6rem;
     }
