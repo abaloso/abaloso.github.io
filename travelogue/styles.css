@@ -37,15 +37,16 @@ header nav ul li a {
 
 .container {
     padding: 2rem 1rem;
-    max-width: 1800px;
-    margin: 0 auto;
+    max-width: 1333px;
+    margin: auto;
 }
 
 .section {
     display: flex;
     flex-wrap: wrap;
+
     margin-bottom: 3rem;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .section figure {
@@ -54,7 +55,7 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .section img {
@@ -65,7 +66,7 @@ header nav ul li a {
 
 
 .section figcaption {
-    text-align: left; 
+    text-align: left;
     padding: 1rem;
 }
 
@@ -87,20 +88,45 @@ header nav ul li a {
     color: #555;
     text-align: center;
 }
-@media (min-width: 769px){
+
+@media (min-width: 769px) {
     .section:nth-child(even) {
         flex-direction: row-reverse;
     }
 
 }
-    
+
+@media (min-width: 2800px) {
+    .container {
+        max-width: 2000px;
+    }
+
+    .section img {
+        width: 1200px;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .section figcaption {
+        text-align: left;
+        padding: 1rem 6rem 1rem 1rem;
+    }
+
+    #locTwoDesc{
+        text-align: left;
+        padding: 1rem 1rem 1rem 6rem;
+    }
+
+}
+
+
 @media (max-width: 768px) {
     .section {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .section figure {
-        flex: 1 1 100%;
+        flex: 1;
     }
 
     .section figcaption {
