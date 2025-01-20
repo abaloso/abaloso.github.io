@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -10,23 +11,37 @@ html {
 
 body {
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
 
 header {
+    margin: 4rem 1rem 4rem 1rem;
+    text-align: center;
+    line-height: 3;
+}
 
+header h1 {
+    font-family: "Yellowtail", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+header p {
+    letter-spacing: 6px;
+    font-size: 1rem;
 }
 
 nav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #06111c;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-    color: #fff;
     padding: 1rem 0;
     list-style: none;
     text-align: center;
@@ -38,8 +53,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
+}
+
+.active {
+    color: #EF3B3B;
+}
+
+nav ul li a:hover {
+    color: #EF3B3B;
 }
 
 .container {
@@ -53,6 +76,7 @@ nav ul li a {
     flex-wrap: wrap;
     margin: 8rem 0;
     justify-content: center;
+    padding-top: 6rem;
 }
 
 .section figure {
