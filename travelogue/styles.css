@@ -12,7 +12,7 @@ html {
 body {
     line-height: 1.6;
     background-color: #fff;
-    color: #333;
+    color: #000;
 }
 
 header {
@@ -45,11 +45,12 @@ nav ul {
     padding: 1rem 0;
     list-style: none;
     text-align: center;
+    font-weight: 600;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -58,11 +59,11 @@ nav ul li a {
 }
 
 .active {
-    color: #EF3B3B;
+    color: #003399;
 }
 
 nav ul li a:hover {
-    color: #EF3B3B;
+    color: #003399;
 }
 
 .container {
@@ -84,8 +85,8 @@ nav ul li a:hover {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: first baseline;
+
 }
 
 .section img {
@@ -94,30 +95,40 @@ nav ul li a:hover {
 
 }
 
-
-.section figcaption {
-    text-align: left;
-    padding: 1rem;
-}
-
-.section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.section p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-
 .quote {
     margin-top: 10px;
     font-style: italic;
-    font-size: 1.2em;
+
     color: #555;
     text-align: center;
 }
+
+#locOddDesc {
+    padding: 1rem 6rem 1rem 1rem;
+
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    color: #003399;
+}
+
+.section h3 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+    color: #333;
+}
+
+
+.section p {
+    font-size: 1rem;
+
+}
+
 
 hr.rounded {
     border-top: 1px solid #bbb;
@@ -127,8 +138,10 @@ hr.rounded {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 50px;
     padding: 5px;
-    background-color: #333;
+    background-color: #003399;
     color: #fff;
 }
 
@@ -137,7 +150,13 @@ footer {
         flex-direction: row-reverse;
     }
 
+    #locEvenDesc {
+        text-align: left;
+        padding: 1rem 2rem 1rem 6rem;
+    }
+
 }
+
 
 @media (min-width: 2049px) {
     .container {
@@ -155,15 +174,15 @@ footer {
         padding: 1rem 6rem 1rem 1rem;
     }
 
-    #locTwoDesc {
+    #locEvenDesc {
         text-align: left;
-        padding: 1rem 1rem 1rem 6rem;
+        padding: 1rem 6rem 1rem 6rem;
     }
 
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     .section {
         flex-direction: column;
     }
