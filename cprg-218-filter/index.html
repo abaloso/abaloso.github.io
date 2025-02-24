@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Media Showcase</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="nav-title">Media Showcase</span>
+        <ul class="navbar">
+          <li>
+            <button data-type="all" onclick="filterMedia('all')" class="active">
+              Show All
+            </button>
+          </li>
+          <li>
+            <button data-type="games" onclick="filterMedia('games')">
+              Games
+            </button>
+          </li>
+          <li>
+            <button data-type="movies" onclick="filterMedia('movies')">
+              Movies
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="genre-filter-container">
+      <label for="choices">Filter by Genre:</label>
+      <select id="choices">
+        <option value="all">All</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="pvp">PvP</option>
+      </select>
+    </div>
+
+    <main>
+      <section class="media-grid">
+        <figure class="movies action">
+          <img src="https://placehold.co/600x400" alt="" />
+          <figcaption>Movie 1</figcaption>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos
+            aspernatur, tenetur rem nam possimus, facere et libero magnam modi,
+            praesentium quas eligendi ab! Dolore ipsum in suscipit quae
+            excepturi.
+          </p>
+        </figure>
+        <figure class="movies adventure">
+          <img src="https://placehold.co/600x400" alt="" />
+          <figcaption>Movie 2</figcaption>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ea
+            porro impedit provident sed, a accusantium tempore delectus totam
+            fuga iste quibusdam dolorem eaque qui labore esse illo. Numquam,
+            distinctio?
+          </p>
+        </figure>
+        <figure class="movies adventure">
+          <img src="https://placehold.co/600x400" alt="" />
+          <figcaption>Movie 3</figcaption>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            id ducimus reprehenderit itaque facere qui! Tempore quidem, porro
+            sequi dolores nostrum placeat cumque autem voluptatum fugit qui enim
+            iure eligendi.
+          </p>
+        </figure>
+        <figure class="games action">
+          <img src="https://placehold.co/600x400" alt="" />
+          <figcaption>Game 1</figcaption>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            accusantium mollitia nihil rerum vel. Non incidunt, assumenda, saepe
+            provident explicabo facere tenetur deleniti facilis officia omnis
+            fuga sit placeat eligendi?
+          </p>
+        </figure>
+        <figure class="games pvp">
+          <img src="https://placehold.co/600x400" alt="" />
+          <figcaption>Game 2</figcaption>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+            illum assumenda ipsum et cupiditate ipsa eos ipsam sapiente tempore
+            unde totam odio corrupti placeat, voluptates tenetur. Repellat,
+            provident minus. Voluptatibus?
+          </p>
+        </figure>
+        <figure class="games action">
+          <img src="https://placehold.co/600x400" alt="" />
+          <figcaption>Game 3</figcaption>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            ullam qui eveniet veniam, numquam optio nulla repellendus veritatis
+            itaque aspernatur est quo totam commodi quibusdam ad, perspiciatis
+            similique delectus praesentium.
+          </p>
+        </figure>
+      </section>
+
+      <section class="video-section">
+        <h2>Related Video</h2>
+        <video controls>
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Angelo Baloso 2025</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
