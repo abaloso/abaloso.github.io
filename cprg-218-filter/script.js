@@ -14,7 +14,8 @@ function filterMedia(type) {
 
   let genreFilter = document.getElementById("genre-filter-container");
   if (type === "all") {
-    genreFilter.style.display = "block";
+    genreFilter.style.display = "flex";
+    genreFilter.style.justifyContent = "center";
   } else {
     genreFilter.style.display = "none";
   }
@@ -46,3 +47,24 @@ function filterGenre(genre) {
 document.getElementById("choices").addEventListener("change", function () {
   filterGenre(this.value);
 });
+
+//burger menu
+function toggleMenu() {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("active");
+}
+
+document.querySelectorAll(".navbar button").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    closeMenu();
+  });
+});
+
+window.addEventListener("scroll", closeMenu);
+
+function closeMenu() {
+  const navbar = document.querySelector(".navbar");
+  if (navbar.classList.contains("active")) {
+    navbar.classList.remove("active");
+  }
+}
