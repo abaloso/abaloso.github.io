@@ -6,7 +6,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -75,10 +76,10 @@ nav {
     max-width: 100%;
 }
 
-.intro h2 {
+.intro h1 {
     font-family: "Karla", sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 1rem;
 }
 
@@ -96,7 +97,8 @@ nav {
     justify-content: center;
 }
 
-label, select {
+label,
+select {
     font-size: 1.2rem;
     margin: 1rem;
     padding: 0.8rem;
@@ -136,10 +138,7 @@ p {
 
 img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 960px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
 }
 
@@ -179,7 +178,6 @@ footer {
     text-align: center;
 }
 
-/* Mobile Navigation */
 @media (max-width: 768px) {
     .burger-menu {
         display: flex;
@@ -202,6 +200,40 @@ footer {
         display: flex;
     }
 }
+
+@media (min-width: 2800px) {
+
+    .intro h1 {
+        font-family: "Karla", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+    .intro p {
+        font-family: "Merriweather", serif;
+        font-size: 1.8rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+
+    figcaption {
+        font-family: "Karla", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-family: "Merriweather", serif;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .media-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -250,10 +282,10 @@ footer {
     border: none;
     outline: none;
     padding: 0;
-    position: absolute; 
+    position: absolute;
     top: relative;
     right: 20px;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .burger-menu span {
