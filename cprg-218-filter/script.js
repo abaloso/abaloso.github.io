@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function filterMedia(type) {
   let items = document.querySelectorAll(".media-grid figure");
+  let introSection = document.querySelector(".intro");
   items.forEach((item) => {
     if (type === "all" || item.classList.contains(type)) {
       item.style.display = "";
@@ -16,8 +17,10 @@ function filterMedia(type) {
   if (type === "all") {
     genreFilter.style.display = "flex";
     genreFilter.style.justifyContent = "center";
+    introSection.style.display = "block";
   } else {
     genreFilter.style.display = "none";
+    introSection.style.display = "none";
   }
 
   let activeButton = document.querySelector(".navbar .active");
