@@ -1,41 +1,15 @@
 .dining-hero {
-    position: relative;
     height: 60vh;
     min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-dining.avif');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--light-text);
-    padding-top: 80px;
-    overflow: hidden;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-}
-
-.dining-hero .hero-content {
-    position: relative;
-    z-index: 3;
-    max-width: 800px;
-    padding: 0 2rem;
+    padding-top: 120px;
 }
 
 hr {
@@ -43,6 +17,11 @@ hr {
     border-radius: 5px;
     margin: auto;
     width: 80%;
+}
+
+.dining-hero .hero-content {
+    max-width: 800px;
+    padding: 0 2rem;
 }
 
 .dining-hero h1 {
