@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities & Excursions | Shangri-La Beach Resort</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/activities.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <section class="header-main">
+            <div class="container">
+                <figure class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Shangri-La Resort Logo" class="logo" width="180" height="60">
+                    </a>
+                </figure>
+                
+                <aside class="header-controls">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <nav id="main-nav" class="main-nav">
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Guest Rooms</a></li>
+                            <li><a href="dining.html">Dining</a></li>
+                            <li><a href="activities.html" class="active">Activities & Excursions</a></li>
+                            <li><a href="spa.html">Spa</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="#" class="book-now-btn">Book Now</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <form action="#" method="get" class="search-form" role="search">
+                        <input type="text" placeholder="Search..." name="search" aria-label="Search the site">
+                        <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+        <section class="weather-bar" aria-label="Weather information">
+            <div class="container">
+                <p id="weather-display">
+                    <span>Current conditions in Cancun, Mexico: Loading...</span>
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="activities-hero">
+            <article class="hero-content">
+                <h1>Activities & Excursions</h1>
+                <p>Discover the wonders of our tropical paradise and create unforgettable memories with our curated selection of activities and excursions.</p>
+                <a href="#booking" class="btn btn-primary">Book an Experience</a>
+            </article>
+        </section>
+
+        <section class="main-category" id="on-site-activities">
+            <div class="container">
+                <header class="main-category-header">
+                    <h2 class="section-heading">On-Site Activities</h2>
+                </header>
+            </div>
+        </section>
+
+        <section class="activity-category" id="relaxation">
+            <div class="category-container">
+                <header class="category-header">
+                    <h2>Relaxation & Rejuvenation</h2>
+                </header>
+                
+                <div class="activities-grid">
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=sunrise yoga on tropical beach" alt="Sunrise Yoga on the Beach" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Sunrise Yoga on the Beach</h3>
+                            <p>Start your day with a peaceful yoga session as the sun rises over the ocean.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> Daily</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=meditation in tropical garden" alt="Guided Meditation Sessions" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Guided Meditation Sessions</h3>
+                            <p>Find inner peace and tranquillity with our guided meditation sessions in the serene garden.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> Daily</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=luxury beach loungers on pristine beach" alt="Beachside Relaxation" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Beachside Relaxation</h3>
+                            <p>Unwind on our pristine private beach with complimentary sun loungers and umbrellas.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> All day</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=infinity pool with ocean view" alt="Infinity Pool Retreat" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Infinity Pool Retreat</h3>
+                            <p>Take a refreshing dip in our stunning infinity pool with breathtaking ocean views.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> All day</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity-category" id="adventure">
+            <div class="category-container">
+                <header class="category-header">
+                    <h2>Adventure & Recreation</h2>
+                </header>
+                
+                <div class="activities-grid">
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=snorkeling in coral reef" alt="Water Sports - Snorkeling" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Water Sports</h3>
+                            <p>Explore the crystal-clear waters with our range of water sports activities.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> All day</li>
+                                <li><i class="fas fa-tag"></i> Equipment rentals available</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                                <button class="btn btn-secondary toggle-details" data-target="water-sports-details">Learn More</button>
+                            </div>
+                            
+                            <div id="water-sports-details" class="activity-details-expanded">
+                                <div class="water-sports-header">
+                                    <i class="fas fa-water"></i> <strong>Available Activities:</strong>
+                                </div>
+                                <dl class="water-sports-list">
+                                    <dt><strong>Snorkeling:</strong></dt>
+                                    <dd>Discover vibrant coral reefs and marine life. (Equipment provided, fees may apply)</dd>
+                                    
+                                    <dt><strong>Kayaking:</strong></dt>
+                                    <dd>Paddle along the coastline and explore hidden coves. (Rentals available)</dd>
+                                    
+                                    <dt><strong>Stand-Up Paddleboarding:</strong></dt>
+                                    <dd>Enjoy a fun and invigorating workout on the water. (Rentals available)</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=beach volleyball on tropical beach" alt="Beach Volleyball" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Beach Volleyball</h3>
+                            <p>Gather your friends and family for a friendly game of beach volleyball.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> All day</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=luxury resort fitness center" alt="Fitness Center" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Fitness Center</h3>
+                            <p>Maintain your fitness routine in our state-of-the-art fitness center.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> 24/7 access</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card">
+                        <figure class="activity-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=kids club activities at resort" alt="Kids' Club Activities" width="500" height="300">
+                        </figure>
+                        <div class="activity-content">
+                            <h3>Kids' Club Activities</h3>
+                            <p>Let your children enjoy fun and engaging activities with our supervised Kids' Club.</p>
+                            <ul class="activity-details">
+                                <li><i class="far fa-clock"></i> Daily, various activities</li>
+                                <li><i class="fas fa-tag"></i> Complimentary</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Excursions Section -->
+        <section class="main-category" id="local-excursions">
+            <div class="container">
+                <header class="main-category-header">
+                    <h2 class="section-heading">Local Excursions</h2>
+                </header>
+            </div>
+        </section>
+
+        <section class="excursion-category" id="natural-beauty">
+            <div class="category-container">
+                <header class="category-header">
+                    <h2>Explore the Natural Beauty</h2>
+                </header>
+                
+                <div class="excursions-grid">
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=snorkeling tour in coral reef" alt="Coral Reef Snorkeling Tour" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Coral Reef Snorkeling Tour</h3>
+                            <p>Embark on a guided snorkeling tour to explore the vibrant coral reefs and encounter diverse marine life.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Half-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=island hopping boat tour" alt="Island Hopping Adventure" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Island Hopping Adventure</h3>
+                            <p>Discover the surrounding islands with a scenic boat tour.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Full-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=rainforest waterfall hike" alt="Rainforest Hike & Waterfall Visit" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Rainforest Hike & Waterfall Visit</h3>
+                            <p>Immerse yourself in the lush rainforest and discover hidden waterfalls.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Half-day or full-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=sunset cruise on ocean" alt="Sunset Cruise" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Sunset Cruise</h3>
+                            <p>Enjoy a romantic sunset cruise along the coastline with breathtaking views.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Evening excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="excursion-category" id="cultural">
+            <div class="category-container">
+                <header class="category-header">
+                    <h2>Cultural Experiences</h2>
+                </header>
+                
+                <div class="excursions-grid">
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=traditional mexican village" alt="Local Village Visit" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Local Village Visit</h3>
+                            <p>Experience the authentic culture and traditions of the local village.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Half-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=mexican cooking class" alt="Traditional Cooking Class" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Traditional Cooking Class</h3>
+                            <p>Learn to prepare local delicacies with a hands-on cooking class.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Half-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=traditional mexican dance performance" alt="Cultural Performance" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Cultural Performance</h3>
+                            <p>Enjoy a captivating performance of traditional music and dance.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Evening event</li>
+                                <li><i class="fas fa-tag"></i> Fees may apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="excursion-category" id="adventure-wildlife">
+            <div class="category-container">
+                <header class="category-header">
+                    <h2>Adventure & Wildlife</h2>
+                </header>
+                
+                <div class="excursions-grid">
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=scuba diving in coral reef" alt="Diving Excursions" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Diving Excursions</h3>
+                            <p>Explore the underwater world with our certified diving instructors.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Various dive sites and packages available</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=wildlife sanctuary in mexico" alt="Wildlife Sanctuary Visit" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Wildlife Sanctuary Visit</h3>
+                            <p>Encounter exotic wildlife at a nearby sanctuary.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Half-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="excursion-card">
+                        <figure class="excursion-image">
+                            <img src="/placeholder.svg?height=300&width=500&query=deep sea fishing in mexico" alt="Deep-Sea Fishing" width="500" height="300">
+                        </figure>
+                        <div class="excursion-content">
+                            <h3>Deep-Sea Fishing</h3>
+                            <p>Embark on a thrilling deep-sea fishing adventure.</p>
+                            <ul class="excursion-details">
+                                <li><i class="far fa-clock"></i> Half-day or full-day excursion</li>
+                                <li><i class="fas fa-tag"></i> Fees apply</li>
+                            </ul>
+                            <div class="card-actions">
+                                <a href="#booking" class="btn btn-primary book-now-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="booking-container">
+                <h2>Booking & Information</h2>
+                <ul class="booking-info">
+                    <li><i class="fas fa-concierge-bell"></i> Our concierge team is available to assist you with booking activities and excursions.</li>
+                    <li><i class="fas fa-info-circle"></i> Please inquire about availability and pricing for specific activities.</li>
+                    <li><i class="fas fa-car"></i> Transportation to and from excursion locations can be arranged.</li>
+                    <li><i class="fas fa-calendar-alt"></i> Advance bookings are recommended, especially during peak season.</li>
+                </ul>
+                <p class="booking-cta">Create lasting memories at Shangri-La Beach Resort with our diverse range of activities and excursions.</p>
+                
+                <form id="activity-booking-form" class="booking-form">
+                    <h3>Book an Activity or Excursion</h3>
+                    <fieldset class="form-group">
+                        <label for="activity-type">Activity Type</label>
+                        <select id="activity-type" name="activity-type" required>
+                            <option value="">Select an activity or excursion</option>
+                            <optgroup label="On-Site Activities">
+                                <option value="yoga">Sunrise Yoga on the Beach</option>
+                                <option value="meditation">Guided Meditation Sessions</option>
+                                <option value="water-sports">Water Sports</option>
+                                <option value="kids-club">Kids' Club Activities</option>
+                            </optgroup>
+                            <optgroup label="Local Excursions">
+                                <option value="snorkeling">Coral Reef Snorkeling Tour</option>
+                                <option value="island-hopping">Island Hopping Adventure</option>
+                                <option value="rainforest">Rainforest Hike & Waterfall Visit</option>
+                                <option value="sunset-cruise">Sunset Cruise</option>
+                                <option value="village-visit">Local Village Visit</option>
+                                <option value="cooking-class">Traditional Cooking Class</option>
+                                <option value="cultural-performance">Cultural Performance</option>
+                                <option value="diving">Diving Excursions</option>
+                                <option value="wildlife">Wildlife Sanctuary Visit</option>
+                                <option value="fishing">Deep-Sea Fishing</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="activity-date">Date</label>
+                        <input type="date" id="activity-date" name="activity-date" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="participants">Number of Participants</label>
+                        <select id="participants" name="participants" required>
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6+">6+ People</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="special-requests">Special Requests or Questions</label>
+                        <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group form-submit">
+                        <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="footer-info">
+                <h3>Shangri-La Beach Resort</h3>
+                <p>Your dream getaway in Cancun, Mexico offering luxury accommodations and breathtaking views.</p>
+            </section>
+            <nav class="footer-navigation">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Guest Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="activities.html">Activities & Excursions</a></li>
+                    <li><a href="spa.html">Spa</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+            <section class="footer-contact">
+                <h3>Contact Us</h3>
+                <address>
+                    <p>Shangri-La Beach Resort</p>
+                    <p>Zona Hotelera, Cancun</p>
+                    <p>Quintana Roo, Mexico</p>
+                    <p>Email: <a href="mailto:info@shangri-la-resort.com">info@shangri-la-resort.com</a></p>
+                    <p>Phone: <a href="tel:+529981234567">+52 998 123 4567</a></p>
+                </address>
+            </section>
+            <section class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <section class="newsletter">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="footer-legal">
+            <p>&copy; 2025 Shangri-La Beach Resort. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/activities.js" defer></script>
+</body>
+</html>

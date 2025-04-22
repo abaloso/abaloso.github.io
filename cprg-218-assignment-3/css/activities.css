@@ -1,0 +1,488 @@
+.activities-hero {
+    height: 60vh;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/placeholder.svg?height=1000&width=1600&query=tropical resort activities on beach");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text);
+    padding-top: 120px;
+}
+
+.activities-hero .hero-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.activities-hero h1 {
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.activities-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    border-top: 1px solid lightgray;
+    border-radius: 5px;
+    margin: auto;
+    width: 80%;
+}
+
+.main-category {
+    padding: 5rem 0 1rem;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.main-category-header {
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.section-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.activity-category,
+.excursion-category {
+    padding: 4rem 0;
+}
+
+.activity-category:nth-child(odd),
+.excursion-category:nth-child(odd) {
+    background-color: var(--light-accent);
+}
+
+.activity-category:nth-child(even),
+.excursion-category:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.category-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.category-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.category-header h2 {
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.category-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.activities-grid,
+.excursions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+#cultural .excursions-grid,
+#adventure-wildlife .excursions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.activity-card,
+.excursion-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-card:hover,
+.excursion-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-image,
+.excursion-image {
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-image img,
+.excursion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.activity-card:hover .activity-image img,
+.excursion-card:hover .excursion-image img {
+    transform: scale(1.05);
+}
+
+.activity-content,
+.excursion-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.activity-content h3,
+.excursion-content h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.activity-content p,
+.excursion-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.card-actions .btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+.book-now-btn {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+}
+
+.activity-content .btn,
+.excursion-content .btn {
+    margin-top: 0;
+    align-self: auto;
+}
+
+.activity-details,
+.excursion-details {
+    list-style: none;
+    margin-bottom: 1rem;
+    margin-top: auto;
+}
+
+.activity-details li,
+.excursion-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.activity-details i,
+.excursion-details i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.activity-details-expanded {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.activity-details-expanded.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.water-sports-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.water-sports-header i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.water-sports-list {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.water-sports-list dt {
+    font-weight: 600;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.water-sports-list dd {
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.booking-section {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+}
+
+.booking-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.booking-section h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.booking-info {
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.booking-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.booking-info li:last-child {
+    margin-bottom: 0;
+}
+
+.booking-info i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.booking-cta {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.booking-form {
+    background-color: var(--background-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.booking-form h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group:nth-last-child(2) {
+    grid-column: 1 / -1;
+}
+
+.form-submit {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    .activities-grid,
+    .excursions-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    #cultural .excursions-grid,
+    #adventure-wildlife .excursions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .activities-grid,
+    .excursions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-category,
+    .excursion-category {
+        padding: 3rem 0;
+    }
+
+    .main-category {
+        padding: 3rem 0 1rem;
+    }
+
+    #cultural .excursions-grid,
+    #adventure-wildlife .excursions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .activities-grid,
+    .excursions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .activity-image,
+    .excursion-image {
+        height: 200px;
+    }
+
+    .booking-info {
+        padding: 1.5rem;
+    }
+
+    #cultural .excursions-grid,
+    #adventure-wildlife .excursions-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 376px) {
+    .activities-hero {
+        height: auto;
+    }
+}
