@@ -2,7 +2,7 @@
 .rooms-hero {
     height: 60vh;
     min-height: 400px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/600x400');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/hero-room.avif');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -32,7 +32,7 @@
 .rooms-intro {
     padding: 5rem 0 2rem;
     text-align: center;
-    background-color: #ffffff;
+    background-color: var(--background-color);
 }
 
 .intro-text {
@@ -47,11 +47,11 @@
 }
 
 .room-section:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: var(--background-color);
 }
 
 .room-section:nth-child(even) {
-    background-color: #f8f8f8;
+    background-color: var(--light-accent);
 }
 
 .room-detail {
@@ -178,7 +178,7 @@
 
 .booking-section {
     padding: 5rem 0;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
 }
 
 .booking-container {
@@ -193,7 +193,7 @@
 }
 
 .booking-form {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     padding: 2.5rem;
     border-radius: 8px;
     box-shadow: var(--box-shadow);

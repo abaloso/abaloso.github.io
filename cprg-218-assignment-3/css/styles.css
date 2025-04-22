@@ -6,13 +6,16 @@
 }
 
 :root {
-    --primary-color: #0066a4;
-    --secondary-color: #005080;
+    --primary-color: #003d60;
+    --secondary-color: #00aab7;
+    --tertiary-color: #b8ccc5;
+    --light-accent: #f1ece9;
+    --sand-color: #f9e3be;
     --accent-color: #f8f8f8;
     --text-color: #333333;
     --light-text: #ffffff;
     --background-color: #ffffff;
-    --footer-bg: #003050;
+    --footer-bg: #003d60;
     --border-radius: 4px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -85,6 +88,7 @@ section>h2 {
     padding: 0 1.5rem;
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -117,12 +121,14 @@ section>h2 {
     color: var(--light-text);
 }
 
+/* Container class for consistent content width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
+/* Footer Styles */
 .site-footer {
     background-color: var(--footer-bg);
     color: var(--light-text);
@@ -168,7 +174,7 @@ section>h2 {
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .footer-links li {
@@ -202,7 +208,7 @@ section>h2 {
 }
 
 .social-links a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     transform: translateY(-3px);
 }
 
@@ -246,7 +252,20 @@ section>h2 {
     margin-top: 0.5rem;
 }
 
-/* Responsive Styles */
+.attribution {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.attribution a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.attribution a:hover {
+    color: var(--light-text);
+}
+
 @media (max-width: 1024px) {
     h1 {
         font-size: 3rem;
@@ -273,6 +292,7 @@ section>h2 {
     section {
         padding: 3rem 0;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -287,5 +307,4 @@ section>h2 {
     h2 {
         font-size: 1.8rem;
     }
-
 }

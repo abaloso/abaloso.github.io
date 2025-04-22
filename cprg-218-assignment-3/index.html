@@ -10,9 +10,6 @@
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        history.scrollRestoration = "manual";
-    </script>
 </head>
 <body>
     <header class="site-header">
@@ -72,7 +69,7 @@
                 </div>
             </article>
         </section>
-
+        <hr>
         <section id="experience-section" class="experience-highlights">
             <h2>Experience Unforgettable Moments</h2>
             <ul class="features-grid">
@@ -110,14 +107,14 @@
                 </li>
             </ul>
         </section>
-
+        <hr>
         <section class="accommodations">
             <h2>Our Luxurious Accommodations</h2>
             <ul class="rooms-grid">
                 <li>
                     <article class="room-card">
                         <figure class="room-image">
-                            <img src="https://placehold.co/800x500" alt="Ocean View Deluxe Room" width="500" height="300">
+                            <img src="./assets/images/ocean-view-deluxe-room.avif"  alt="Ocean View Deluxe Room" width="500" height="300">
                         </figure>
                         <section class="room-details">
                             <h3>Ocean View Deluxe Room</h3>
@@ -129,7 +126,7 @@
                 <li>
                     <article class="room-card">
                         <figure class="room-image">
-                            <img src="https://placehold.co/800x500" alt="Beachfront Suite" width="500" height="300">
+                            <img src="./assets/images/beach-front-suite.avif" alt="Beachfront Suite" width="500" height="300">
                         </figure>
                         <section class="room-details">
                             <h3>Beachfront Suite</h3>
@@ -141,7 +138,7 @@
                 <li>
                     <article class="room-card">
                         <figure class="room-image">
-                            <img src="https://placehold.co/800x500" alt="Garden View Family Room" width="500" height="300">
+                            <img src="./assets/images/garden-view-family-room.avif"  alt="Garden View Family Room" width="500" height="300">
                         </figure>
                         <section class="room-details">
                             <h3>Garden View Family Room</h3>
@@ -152,33 +149,7 @@
                 </li>
             </ul>
         </section>
-
-        <section class="booking-preview">
-            <h2>Reserve Your Escape</h2>
-            <form id="booking-form" class="booking-form">
-                <fieldset class="form-group">
-                    <label for="check-in">Check-in</label>
-                    <input type="date" id="check-in" name="check-in" required>
-                </fieldset>
-                <fieldset class="form-group">
-                    <label for="check-out">Check-out</label>
-                    <input type="date" id="check-out" name="check-out" required>
-                </fieldset>
-                <fieldset class="form-group">
-                    <label for="room-type">Room Type</label>
-                    <select id="room-type" name="room-type" required>
-                        <option value="">Select a room type</option>
-                        <option value="ocean-deluxe">Ocean View Deluxe Room</option>
-                        <option value="beachfront">Beachfront Suite</option>
-                        <option value="garden-family">Garden View Family Room</option>
-                    </select>
-                </fieldset>
-                <fieldset class="form-group">
-                    <button type="submit" class="btn btn-primary">Check Availability</button>
-                </fieldset>
-            </form>
-        </section>
-
+        <hr>
         <section class="testimonials-preview">
             <h2>What Our Guests Are Saying</h2>
             <ul class="testimonials-grid">
@@ -206,6 +177,32 @@
             <p class="testimonial-link">
                 <a href="testimonials.html" class="btn btn-secondary">Read More Testimonials</a>
             </p>
+        </section>
+        <hr>
+        <section class="booking-preview">
+            <h2>Reserve Your Escape</h2>
+            <form id="booking-form" class="booking-form">
+                <fieldset class="form-group">
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="">Select a room type</option>
+                        <option value="ocean-deluxe">Ocean View Deluxe Room</option>
+                        <option value="beachfront">Beachfront Suite</option>
+                        <option value="garden-family">Garden View Family Room</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <button type="submit" class="btn btn-primary">Check Availability</button>
+                </fieldset>
+            </form>
         </section>
     </main>
 
