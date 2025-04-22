@@ -2,7 +2,7 @@
     height: 60vh;
     min-height: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("/placeholder.svg?height=1000&width=1600&query=tropical resort activities on beach");
+        url("../assets/images/hero-activities-excursions.avif");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -70,14 +70,25 @@ hr {
     padding: 4rem 0;
 }
 
-.activity-category:nth-child(odd),
-.excursion-category:nth-child(odd) {
+
+#cultural,
+.activity-category {
     background-color: var(--light-accent);
 }
 
-.activity-category:nth-child(even),
-.excursion-category:nth-child(even) {
+#on-site-activities,
+#local-excursions,
+#natural-beauty,
+#relaxation,
+.excursion-category {
     background-color: var(--background-color);
+}
+
+hr {
+    border-top: 1px solid lightgray;
+    border-radius: 5px;
+    margin: auto;
+    width: 80%;
 }
 
 .category-container {
@@ -300,7 +311,7 @@ hr {
 
 .booking-section {
     padding: 5rem 0;
-    background-color: var(--background-color);
+    background-color: var(--light-accent);
 }
 
 .booking-container {
@@ -344,10 +355,24 @@ hr {
 }
 
 .booking-cta {
-    text-align: center;
+    font-style: italic;
     font-size: 1.2rem;
     margin-bottom: 3rem;
     font-style: italic;
+}
+
+.booking-cta {
+    font-style: italic;
+    font-weight: 600;
+    font-size: large;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.booking-cta i {
+    color: var(--secondary-color);
 }
 
 .booking-form {
