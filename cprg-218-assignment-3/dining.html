@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining | Shangri-La Beach Resort</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dining.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+    <section class="header-main">
+        <div class="container">
+            <figure class="logo-wrapper">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Shangri-La Resort Logo" class="logo" width="180" height="60">
+                </a>
+            </figure>
+            
+            <aside class="header-controls">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="main-nav" class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Guest Rooms</a></li>
+                        <li><a href="dining.html" class="active">Dining</a></li>
+                        <li><a href="activities.html">Activities & Excursions</a></li>
+                        <li><a href="spa.html">Spa</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#" class="book-now-btn">Book Now</a></li>
+                    </ul>
+                </nav>
+                <form action="#" method="get" class="search-form" role="search">
+                    <input type="text" placeholder="Search..." name="search" aria-label="Search the site">
+                    <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                </form>
+            </aside>
+        </div>
+    </section>
+    <section class="weather-bar" aria-label="Weather information">
+        <div class="container">
+            <p id="weather-display">
+                <span>Current conditions in Cancun, Mexico: Loading...</span>
+            </p>
+        </div>
+    </section>
+</header>
+
+    <main>
+        <section class="dining-hero">
+            <article class="hero-content">
+                <h1>A Culinary Journey</h1>
+                <p>Indulge in a diverse range of dining experiences at Shangri-La Beach Resort. From elegant fine dining to casual beachfront bites, our restaurants and bars offer something to tantalize every taste bud and create unforgettable culinary moments.</p>
+                <a href="#reservation" class="btn btn-primary">Make a Reservation</a>
+            </article>
+        </section>
+
+        <section class="restaurant-section" id="beach-house">
+            <article class="restaurant-detail">
+                <figure class="restaurant-image">
+                    <img src="https://placehold.co/800x500" alt="The Beach House Restaurant" width="800" height="500">
+                </figure>
+                <section class="restaurant-info">
+                    <header>
+                        <h2>The Beach House - Fine Dining with Ocean Views</h2>
+                    </header>
+                    <p class="restaurant-description">Experience the epitome of culinary excellence at The Beach House. Our signature restaurant offers breathtaking panoramic ocean views, creating a romantic and sophisticated ambiance. Our talented chefs craft exquisite dishes using the freshest locally-sourced seafood and premium international ingredients. Indulge in innovative flavor combinations and impeccable service for a truly memorable fine dining experience. The Beach House is perfect for special occasions or a luxurious evening out.</p>
+                    
+                    <section class="restaurant-details">
+                        <ul class="details-list">
+                            <li><i class="fas fa-utensils"></i> <strong>Cuisine:</strong> Fine Dining, Seafood, International</li>
+                            <li><i class="fas fa-moon"></i> <strong>Ambiance:</strong> Elegant, Romantic, Oceanfront</li>
+                            <li><i class="fas fa-tshirt"></i> <strong>Dress Code:</strong> Smart Casual</li>
+                            <li><i class="fas fa-calendar-check"></i> <strong>Reservations:</strong> Recommended</li>
+                        </ul>
+                    </section>
+                    
+                    <footer class="restaurant-actions">
+                        <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+                        <a href="#" class="btn btn-secondary">View Menu</a>
+                    </footer>
+                </section>
+            </article>
+        </section>
+
+        <section class="restaurant-section" id="sand-bar">
+            <article class="restaurant-detail">
+                <figure class="restaurant-image">
+                    <img src="https://placehold.co/800x500" alt="The Sand Bar Restaurant" width="800" height="500">
+                </figure>
+                <section class="restaurant-info">
+                    <header>
+                        <h2>The Sand Bar - Relaxed Beachfront Grill</h2>
+                    </header>
+                    <p class="restaurant-description">For a more casual and laid-back dining experience, head to The Sand Bar. Situated right on the beach, this vibrant grill offers a relaxed atmosphere where you can enjoy delicious food with your toes in the sand. Savor grilled specialties, fresh salads, and satisfying sandwiches, all while soaking in the sun and enjoying the ocean breeze. The Sand Bar is the perfect spot for a casual lunch, a refreshing afternoon snack, or a relaxed dinner under the stars.</p>
+                    
+                    <section class="restaurant-details">
+                        <ul class="details-list">
+                            <li><i class="fas fa-utensils"></i> <strong>Cuisine:</strong> Casual, Grill, Seafood, American</li>
+                            <li><i class="fas fa-moon"></i> <strong>Ambiance:</strong> Relaxed, Beachfront, Informal</li>
+                            <li><i class="fas fa-tshirt"></i> <strong>Dress Code:</strong> Casual</li>
+                            <li><i class="fas fa-calendar-check"></i> <strong>Reservations:</strong> Not Required</li>
+                        </ul>
+                    </section>
+                    
+                    <footer class="restaurant-actions">
+                        <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+                        <a href="#" class="btn btn-secondary">View Menu</a>
+                    </footer>
+                </section>
+            </article>
+        </section>
+
+        <section class="restaurant-section" id="poolside-cafe">
+            <article class="restaurant-detail">
+                <figure class="restaurant-image">
+                    <img src="https://placehold.co/800x500" alt="The Poolside Cafe" width="800" height="500">
+                </figure>
+                <section class="restaurant-info">
+                    <header>
+                        <h2>The Poolside Cafe - Refreshments and Light Bites</h2>
+                    </header>
+                    <p class="restaurant-description">Stay refreshed and energized without leaving the poolside at The Poolside Cafe. This convenient and casual spot offers a variety of light bites, including salads, wraps, and snacks, as well as a wide selection of refreshing beverages, from tropical cocktails to chilled juices. It's the perfect place to grab a quick and tasty meal or a cool drink while enjoying the sun and the pool.</p>
+                    
+                    <section class="restaurant-details">
+                        <ul class="details-list">
+                            <li><i class="fas fa-utensils"></i> <strong>Cuisine:</strong> Casual, Light Bites, Snacks, Beverages</li>
+                            <li><i class="fas fa-moon"></i> <strong>Ambiance:</strong> Relaxed, Poolside, Informal</li>
+                            <li><i class="fas fa-tshirt"></i> <strong>Dress Code:</strong> Casual</li>
+                            <li><i class="fas fa-calendar-check"></i> <strong>Reservations:</strong> Not Required</li>
+                        </ul>
+                    </section>
+                    
+                    <footer class="restaurant-actions">
+                        <a href="#" class="btn btn-secondary">View Menu</a>
+                    </footer>
+                </section>
+            </article>
+        </section>
+
+        <section class="restaurant-section" id="lobby-lounge">
+            <article class="restaurant-detail">
+                <figure class="restaurant-image">
+                    <img src="https://placehold.co/800x500" alt="The Lobby Lounge" width="800" height="500">
+                </figure>
+                <section class="restaurant-info">
+                    <header>
+                        <h2>The Lobby Lounge - Sophisticated Cocktails and Ambiance</h2>
+                    </header>
+                    <p class="restaurant-description">Unwind and socialize in the elegant setting of The Lobby Lounge. This sophisticated lounge offers a curated selection of handcrafted cocktails, fine wines, and premium spirits. Enjoy light appetizers and small plates in a stylish atmosphere, often accompanied by live music in the evenings. The Lobby Lounge is the perfect place to start your evening, enjoy a nightcap, or simply relax and soak in the refined ambiance.</p>
+                    
+                    <section class="restaurant-details">
+                        <ul class="details-list">
+                            <li><i class="fas fa-utensils"></i> <strong>Cuisine:</strong> Beverages, Light Appetizers</li>
+                            <li><i class="fas fa-moon"></i> <strong>Ambiance:</strong> Sophisticated, Relaxed, Live Music (select evenings)</li>
+                            <li><i class="fas fa-tshirt"></i> <strong>Dress Code:</strong> Smart Casual</li>
+                            <li><i class="fas fa-calendar-check"></i> <strong>Reservations:</strong> Not Required</li>
+                        </ul>
+                    </section>
+                    
+                    <footer class="restaurant-actions">
+                        <a href="#" class="btn btn-secondary">View Menu</a>
+                    </footer>
+                </section>
+            </article>
+        </section>
+
+        <section class="other-dining-options">
+            <h2>Other Dining Options</h2>
+            <div class="options-container">
+                <article class="dining-option">
+                    <i class="fas fa-concierge-bell option-icon"></i>
+                    <h3>Room Service</h3>
+                    <p>Enjoy the convenience of dining in the comfort and privacy of your own room with our extensive room service menu, available 24 hours a day.</p>
+                </article>
+                
+                <article class="dining-option">
+                    <i class="fas fa-coffee option-icon"></i>
+                    <h3>Buffet Breakfast</h3>
+                    <p>Start your day with a sumptuous buffet breakfast featuring a wide array of hot and cold dishes, fresh fruits, pastries, and more.</p>
+                </article>
+                
+                <article class="dining-option">
+                    <i class="fas fa-carrot option-icon"></i>
+                    <h3>Special Dietary Options</h3>
+                    <p>We are committed to accommodating your dietary needs. Please inform us of any allergies or dietary restrictions, and our chefs will be happy to prepare customized meals for you.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation-section">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form" class="reservation-form">
+                <fieldset class="form-group">
+                    <label for="restaurant">Restaurant</label>
+                    <select id="restaurant" name="restaurant" required aria-required="true">
+                        <option value="">Select a restaurant</option>
+                        <option value="beach-house">The Beach House</option>
+                        <option value="sand-bar">The Sand Bar</option>
+                        <option value="poolside-cafe">The Poolside Cafe</option>
+                        <option value="lobby-lounge">The Lobby Lounge</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="17:30">5:30 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <option value="8">8 Guests</option>
+                        <option value="9+">9+ Guests</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                </fieldset>
+                <fieldset class="form-group form-submit">
+                    <button type="submit" class="btn btn-primary">Request Reservation</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="footer-info">
+                <h3>Shangri-La Beach Resort</h3>
+                <p>Your dream getaway in Cancun, Mexico offering luxury accommodations and breathtaking views.</p>
+            </section>
+            <nav class="footer-navigation">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Guest Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="activities.html">Activities & Excursions</a></li>
+                    <li><a href="spa.html">Spa</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+            <section class="footer-contact">
+                <h3>Contact Us</h3>
+                <address>
+                    <p>Shangri-La Beach Resort</p>
+                    <p>Zona Hotelera, Cancun</p>
+                    <p>Quintana Roo, Mexico</p>
+                    <p>Email: <a href="mailto:info@shangri-la-resort.com">info@shangri-la-resort.com</a></p>
+                    <p>Phone: <a href="tel:+529981234567">+52 998 123 4567</a></p>
+                </address>
+            </section>
+            <section class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <section class="newsletter">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="footer-legal">
+            <p>&copy; 2025 Shangri-La Beach Resort. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js" defer></script>
+</body>
+</html>

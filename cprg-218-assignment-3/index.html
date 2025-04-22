@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri-La Beach Resort | Your Dream Getaway</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        history.scrollRestoration = "manual";
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <section class="header-main">
+            <div class="container">
+                <figure class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Shangri-La Resort Logo" class="logo" width="180" height="60">
+                    </a>
+                </figure>
+            
+                <aside class="header-controls">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav id="main-nav" class="main-nav">
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Guest Rooms</a></li>
+                            <li><a href="dining.html">Dining</a></li>
+                            <li><a href="activities.html">Activities & Excursions</a></li>
+                            <li><a href="spa.html">Spa</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="#" class="book-now-btn">Book Now</a></li>
+                        </ul>
+                    </nav>
+                    <form action="#" method="get" class="search-form" role="search">
+                        <input type="text" placeholder="Search..." name="search" aria-label="Search the site">
+                        <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+        <section class="weather-bar" aria-label="Weather information">
+            <div class="container">
+                <p id="weather-display">
+                    <span>Current conditions in Cancun, Mexico: Loading...</span>
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="hero">
+            <article class="hero-content">
+                <h1>Shangri-La Beach Resort - Your Dream Getaway</h1>
+                <p>Escape to Paradise</p>
+                <p>Indulge in luxury and breathtaking views at Shangri-La Beach Resort.</p>
+                <div class="hero-buttons">
+                    <a href="#experience-section" class="btn btn-secondary">
+                        <i class="fas fa-chevron-down"></i> Discover
+                    </a>
+                    <a href="rooms.html" class="btn btn-primary">Explore Our Accommodations</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="experience-section" class="experience-highlights">
+            <h2>Experience Unforgettable Moments</h2>
+            <ul class="features-grid">
+                <li>
+                    <article class="feature-card">
+                        <i class="feature-icon fas fa-umbrella-beach"></i>
+                        <h3>Private Beach Access</h3>
+                        <p>Step onto our pristine, white-sand beach.</p>
+                        <a href="activities.html" class="feature-link">Learn More</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="feature-card">
+                        <i class="feature-icon fas fa-swimming-pool"></i>
+                        <h3>Infinity Pool</h3>
+                        <p>Relax by our stunning oceanfront infinity pool.</p>
+                        <a href="activities.html" class="feature-link">Learn More</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="feature-card">
+                        <i class="feature-icon fas fa-spa"></i>
+                        <h3>World-Class Spa</h3>
+                        <p>Rejuvenate your mind and body at our spa.</p>
+                        <a href="spa.html" class="feature-link">Learn More</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="feature-card">
+                        <i class="feature-icon fas fa-utensils"></i>
+                        <h3>Exquisite Dining</h3>
+                        <p>Savor culinary delights at our restaurants.</p>
+                        <a href="dining.html" class="feature-link">Learn More</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="accommodations">
+            <h2>Our Luxurious Accommodations</h2>
+            <ul class="rooms-grid">
+                <li>
+                    <article class="room-card">
+                        <figure class="room-image">
+                            <img src="https://placehold.co/800x500" alt="Ocean View Deluxe Room" width="500" height="300">
+                        </figure>
+                        <section class="room-details">
+                            <h3>Ocean View Deluxe Room</h3>
+                            <p>Enjoy stunning ocean views from your private balcony.</p>
+                            <a href="rooms.html" class="btn btn-secondary">View Details</a>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="room-card">
+                        <figure class="room-image">
+                            <img src="https://placehold.co/800x500" alt="Beachfront Suite" width="500" height="300">
+                        </figure>
+                        <section class="room-details">
+                            <h3>Beachfront Suite</h3>
+                            <p>Step directly onto the sand from your spacious suite.</p>
+                            <a href="rooms.html" class="btn btn-secondary">View Details</a>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="room-card">
+                        <figure class="room-image">
+                            <img src="https://placehold.co/800x500" alt="Garden View Family Room" width="500" height="300">
+                        </figure>
+                        <section class="room-details">
+                            <h3>Garden View Family Room</h3>
+                            <p>Perfect for families, with ample space and garden views.</p>
+                            <a href="rooms.html" class="btn btn-secondary">View Details</a>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="booking-preview">
+            <h2>Reserve Your Escape</h2>
+            <form id="booking-form" class="booking-form">
+                <fieldset class="form-group">
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="">Select a room type</option>
+                        <option value="ocean-deluxe">Ocean View Deluxe Room</option>
+                        <option value="beachfront">Beachfront Suite</option>
+                        <option value="garden-family">Garden View Family Room</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <button type="submit" class="btn btn-primary">Check Availability</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="testimonials-preview">
+            <h2>What Our Guests Are Saying</h2>
+            <ul class="testimonials-grid">
+                <li>
+                    <article class="testimonial">
+                        <blockquote class="testimonial-content">
+                            <p>"Our stay at Shangri-La was absolutely perfect! The service was impeccable, and the views were breathtaking."</p>
+                            <footer class="testimonial-author">
+                                <cite>Sarah M.</cite>
+                            </footer>
+                        </blockquote>
+                    </article>
+                </li>
+                <li>
+                    <article class="testimonial">
+                        <blockquote class="testimonial-content">
+                            <p>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."</p>
+                            <footer class="testimonial-author">
+                                <cite>John B.</cite>
+                            </footer>
+                        </blockquote>
+                    </article>
+                </li>
+            </ul>
+            <p class="testimonial-link">
+                <a href="testimonials.html" class="btn btn-secondary">Read More Testimonials</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="footer-info">
+                <h3>Shangri-La Beach Resort</h3>
+                <p>Your dream getaway in Cancun, Mexico offering luxury accommodations and breathtaking views.</p>
+            </section>
+            <nav class="footer-navigation">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Guest Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="activities.html">Activities & Excursions</a></li>
+                    <li><a href="spa.html">Spa</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+            <section class="footer-contact">
+                <h3>Contact Us</h3>
+                <address>
+                    <p>Shangri-La Beach Resort</p>
+                    <p>Zona Hotelera, Cancun</p>
+                    <p>Quintana Roo, Mexico</p>
+                    <p>Email: <a href="mailto:info@shangri-la-resort.com">info@shangri-la-resort.com</a></p>
+                    <p>Phone: <a href="tel:+529981234567">+52 998 123 4567</a></p>
+                </address>
+            </section>
+            <section class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <section class="newsletter">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="footer-legal">
+            <p>&copy; 2025 Shangri-La Beach Resort. All rights reserved.</p>
+            <p class="attribution">Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a> under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0 license</a>.</p>
+        </section>
+    </footer>
+
+    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js" defer></script>
+</body>
+</html>
