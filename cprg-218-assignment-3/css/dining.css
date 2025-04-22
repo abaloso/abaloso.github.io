@@ -1,8 +1,7 @@
-/* Dining Hero Section */
 .dining-hero {
     height: 60vh;
     min-height: 400px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/600x400');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/hero-dining.avif');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -11,6 +10,13 @@
     text-align: center;
     color: var(--light-text);
     padding-top: 120px;
+}
+
+hr {
+    border-top: 1px solid lightgray;
+    border-radius: 5px;
+    margin: auto;
+    width: 80%;
 }
 
 .dining-hero .hero-content {
@@ -34,11 +40,11 @@
 }
 
 .restaurant-section:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: var(--light-accent);
 }
 
 .restaurant-section:nth-child(even) {
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
 }
 
 .restaurant-detail {
@@ -111,6 +117,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.75rem;
+    font-weight: 600;
 }
 
 .details-list li {
@@ -135,7 +142,6 @@
 
 .other-dining-options {
     padding: 5rem 0;
-    background-color: #f0f0f0;
 }
 
 .options-container {
@@ -177,7 +183,6 @@
 
 .reservation-section {
     padding: 5rem 0;
-    background-color: #ffffff;
 }
 
 .reservation-section h2 {
@@ -187,7 +192,7 @@
 .reservation-form {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #f8f8f8;
+    background-color: var(--background-color);
     padding: 2.5rem;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
