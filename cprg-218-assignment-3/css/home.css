@@ -1,7 +1,7 @@
 .hero {
     height: 100vh;
     min-height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/beach-huts.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/beach-front-suite.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
