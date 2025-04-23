@@ -2,7 +2,7 @@
     height: 100vh;
     min-height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../assets/images/beach-front-suite.avif");
+        url("../assets/images/beach-huts.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
