@@ -1,7 +1,8 @@
 .hero {
     height: 100vh;
     min-height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/beach-front-suite.avif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../assets/images/beach-front-suite.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -83,7 +84,6 @@ hr {
 }
 
 .experience-highlights {
-    background-color: var(--background-color);
     padding: 8rem 0;
     scroll-margin-top: 100px;
 }
@@ -144,10 +144,6 @@ hr {
 
 .feature-link:hover::after {
     margin-left: 0.8rem;
-}
-
-.accommodations {
-    background-color: var(--background-color);
 }
 
 .rooms-grid {
@@ -213,10 +209,6 @@ hr {
     margin-top: auto;
 }
 
-.booking-preview {
-    background-color: var(--background-color);
-}
-
 .booking-form {
     max-width: 800px;
     margin: 0 auto;
@@ -260,10 +252,6 @@ hr {
 .form-group select:focus {
     outline: none;
     border-color: var(--secondary-color);
-}
-
-.testimonials-preview {
-    background-color: var(--background-color);
 }
 
 .testimonials-grid {
@@ -317,7 +305,7 @@ cite {
     padding: 0 1.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -327,7 +315,7 @@ cite {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .booking-form {
         grid-template-columns: 1fr;
     }
@@ -344,10 +332,25 @@ cite {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1001px) {
     .hero-buttons {
         flex-direction: row;
         justify-content: center;
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-card {
+        padding: 1.5rem;
+        min-height: 240px;
+    }
+
+    .room-image {
+        height: 180px;
+    }
+
+    .testimonial {
+        padding: 1.5rem;
     }
 }

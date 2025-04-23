@@ -1,7 +1,7 @@
 .rooms-hero {
     height: 60vh;
     min-height: 400px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-room.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/hero-room.avif");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -31,7 +31,6 @@
 .rooms-intro {
     padding: 5rem 0 2rem;
     text-align: center;
-    background-color: var(--background-color);
 }
 
 .intro-text {
@@ -154,7 +153,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
     font-weight: 600;
-
 }
 
 .amenities-list li {
@@ -179,7 +177,6 @@
 
 .booking-section {
     padding: 5rem 0;
-    background-color: var(--background-color);
 }
 
 .booking-container {
@@ -246,7 +243,7 @@
     grid-column: 1 / -1;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .room-detail {
         gap: 2rem;
     }
@@ -257,7 +254,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .room-detail {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -280,7 +277,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
 
     .details-list,
     .amenities-list {
@@ -294,11 +291,12 @@
     .rooms-hero h1 {
         font-size: 2.5rem;
     }
-}
 
-@media (max-width: 376px) {
+    .room-image {
+        height: 250px;
+    }
+
     .rooms-hero {
         height: 80vh;
     }
-
 }

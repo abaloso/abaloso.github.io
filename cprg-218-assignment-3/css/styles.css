@@ -88,7 +88,29 @@ section>h2 {
     padding: 0 1.5rem;
 }
 
-/* Buttons */
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.section-heading.left-aligned::after {
+    left: 0;
+    transform: none;
+}
+
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -121,14 +143,12 @@ section>h2 {
     color: var(--light-text);
 }
 
-/* Container class for consistent content width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
-/* Footer Styles */
 .site-footer {
     background-color: var(--footer-bg);
     color: var(--light-text);
@@ -138,7 +158,7 @@ section>h2 {
 .footer-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -154,7 +174,7 @@ section>h2 {
 }
 
 .footer-navigation {
-    padding: 5rem;
+    padding: 0;
 }
 
 .footer-navigation h3 {
@@ -189,6 +209,24 @@ section>h2 {
     color: var(--light-text);
 }
 
+.footer-contact a {
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.footer-contact a:hover {
+    color: var(--light-text);
+    text-decoration: underline;
+}
+
+.footer-info,
+.footer-navigation,
+.footer-contact,
+.footer-social {
+    padding: 0 1rem;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
@@ -210,6 +248,10 @@ section>h2 {
 .social-links a:hover {
     background-color: var(--secondary-color);
     transform: translateY(-3px);
+}
+
+.newsletter {
+    padding: 0;
 }
 
 .newsletter h4 {
@@ -247,6 +289,10 @@ section>h2 {
     margin: 0;
 }
 
+#btn-subscribe {
+    background-color: var(--secondary-color);
+}
+
 .photo-credits {
     font-size: 0.8rem;
     margin-top: 0.5rem;
@@ -277,6 +323,7 @@ section>h2 {
 
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
     }
 }
 
@@ -293,6 +340,9 @@ section>h2 {
         padding: 3rem 0;
     }
 
+    .footer-content {
+        gap: 3rem;
+    }
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Wellness | Shangri-La Beach Resort</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/spa.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <section class="header-main">
+            <div class="container">
+                <figure class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="Shangri-La Resort Logo" class="logo" width="180" height="60">
+                    </a>
+                </figure>
+                
+                <aside class="header-controls">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav id="main-nav" class="main-nav">
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Guest Rooms</a></li>
+                            <li><a href="dining.html">Dining</a></li>
+                            <li><a href="activities.html">Activities & Excursions</a></li>
+                            <li><a href="spa.html" class="active">Spa</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="#" class="book-now-btn">Book Now</a></li>
+                        </ul>
+                    </nav>
+                    <form action="#" method="get" class="search-form" role="search">
+                        <input type="text" placeholder="Search..." name="search" aria-label="Search the site">
+                        <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+        <section class="weather-bar" aria-label="Weather information">
+            <div class="container">
+                <p id="weather-display">
+                    <span>Current conditions in Cancun, Mexico: Loading...</span>
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="hero spa-hero">
+            <article class="hero-content">
+                <h1>The Serenity Sanctuary</h1>
+                <p>Indulge in a world of relaxation and rejuvenation at our luxurious spa sanctuary. Experience the perfect harmony of traditional and modern treatments designed to restore balance to your mind, body, and spirit.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Book a Treatment</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="spa-services" id="massages">
+            <header class="service-category-header container">
+                <h2>Massages</h2>
+                <p>Our therapeutic massages are designed to relieve tension, improve circulation, and promote overall well-being.</p>
+            </header>
+            
+            <ul class="services-list container">
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Shangri-La Signature Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">90 minutes</span>
+                                <span class="service-price">$250</span>
+                            </div>
+                        </header>
+                        <p class="service-description">A customized massage using a blend of techniques to release tension and promote deep relaxation.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Deep Tissue Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes / 90 minutes</span>
+                                <span class="service-price">$180 / $260</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Targeted massage to relieve chronic muscle tension and pain.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Hot Stone Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">75 minutes</span>
+                                <span class="service-price">$220</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Soothing massage using warm basalt stones to melt away stress and improve circulation.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Aromatherapy Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$190</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Relaxing massage using essential oils to enhance mood and well-being.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Swedish Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes / 90 minutes</span>
+                                <span class="service-price">$170 / $240</span>
+                            </div>
+                        </header>
+                        <p class="service-description">A classic relaxation massage.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Couples Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$350 (per couple)</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Relax with a partner in a private room.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="spa-services" id="facials">
+            <header class="service-category-header container">
+                <h2>Facials</h2>
+                <p>Our facial treatments are customized to address your specific skin concerns and enhance your natural radiance.</p>
+            </header>
+            
+            <ul class="services-list container">
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Shangri-La Radiance Facial</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">75 minutes</span>
+                                <span class="service-price">$210</span>
+                            </div>
+                        </header>
+                        <p class="service-description">A luxurious facial tailored to your skin type, leaving your complexion glowing.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Hydrating Facial</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$180</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Deeply nourishing facial to replenish moisture and restore skin's vitality.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Anti-Aging Facial</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">90 minutes</span>
+                                <span class="service-price">$270</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Advanced facial treatment to reduce fine lines and wrinkles.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Purifying Facial</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$160</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Cleansing facial designed to remove impurities and leave a fresh feeling.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="spa-services" id="body-treatments">
+            <header class="service-category-header container">
+                <h2>Body Treatments</h2>
+                <p>Our body treatments are designed to exfoliate, detoxify, and nourish your skin for a revitalized feeling.</p>
+            </header>
+            
+            <ul class="services-list container">
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Sea Salt Body Scrub</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">45 minutes</span>
+                                <span class="service-price">$150</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Exfoliating treatment to remove dead skin cells and reveal smoother skin.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Tropical Body Wrap</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$200</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Hydrating and nourishing body wrap using natural ingredients.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Sun Relief Wrap</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$170</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Soothing treatment to cool and hydrate skin after sun exposure.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="spa-services" id="nail-services">
+            <header class="service-category-header container">
+                <h2>Manicures & Pedicures</h2>
+                <p>Our nail services combine expert care with premium products for beautiful, healthy nails.</p>
+            </header>
+            
+            <ul class="services-list container">
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Shangri-La Deluxe Manicure</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$90</span>
+                            </div>
+                        </header>
+                        <p class="service-description">A luxurious manicure including exfoliation, massage, and premium polish.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Shangri-La Deluxe Pedicure</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">75 minutes</span>
+                                <span class="service-price">$110</span>
+                            </div>
+                        </header>
+                        <p class="service-description">A rejuvenating pedicure including foot soak, exfoliation, massage, and premium polish.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Classic Manicure</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">45 minutes</span>
+                                <span class="service-price">$70</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Essential nail care including shaping, cuticle care, and polish.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Classic Pedicure</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$90</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Essential foot care including soak, exfoliation, nail shaping, and polish.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="spa-services" id="enhancements">
+            <header class="service-category-header container">
+                <h2>Enhancements (Add-ons)</h2>
+                <p>Enhance your spa experience with these additional treatments.</p>
+            </header>
+            
+            <ul class="services-list container">
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Scalp Massage</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">15 minutes</span>
+                                <span class="service-price">$40</span>
+                            </div>
+                        </header>
+                        <p class="service-description">A relaxing scalp massage to release tension and promote relaxation.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Eye Treatment</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">15 minutes</span>
+                                <span class="service-price">$35</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Targeted treatment to reduce puffiness and dark circles around the eyes.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Foot Reflexology</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">15 minutes</span>
+                                <span class="service-price">$40</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Pressure point massage on the feet to promote overall wellness.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="spa-services" id="wellness">
+            <header class="service-category-header container">
+                <h2>Wellness Programs</h2>
+                <p>Enhance your well-being with our guided wellness sessions.</p>
+            </header>
+            
+            <ul class="services-list container">
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Yoga Session</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">60 minutes</span>
+                                <span class="service-price">$50 (Group), $120 (Private)</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Guided yoga sessions to improve flexibility, strength, and mental clarity.</p>
+                    </article>
+                </li>
+                
+                <li class="service-item">
+                    <article class="service-card">
+                        <header class="service-header">
+                            <h3>Meditation Session</h3>
+                            <div class="service-meta">
+                                <span class="service-duration">30 minutes</span>
+                                <span class="service-price">$40 (Group), $100 (Private)</span>
+                            </div>
+                        </header>
+                        <p class="service-description">Guided meditation to reduce stress and promote mindfulness.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="spa-notes">
+            <h2>Important Notes</h2>
+            <article class="notes-card">
+                <ul class="notes-list">
+                    <li class="note-item info-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Prices are subject to change without notice.</span>
+                    </li>
+                    <li class="note-item reservation-note">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Reservations are highly recommended.</span>
+                    </li>
+                    <li class="note-item time-note">
+                        <i class="fas fa-clock"></i>
+                        <span>Please arrive 15 minutes prior to your scheduled appointment.</span>
+                    </li>
+                    <li class="note-item policy-note">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>A 24-hour cancellation policy applies.</span>
+                    </li>
+                    <li class="note-item gratuity-note">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Gratuity not included.</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <h2>Book Your Spa Experience</h2>
+            <p class="booking-intro">Indulge in a world of relaxation and rejuvenation. Our skilled therapists are ready to provide you with a personalized spa experience.</p>
+            
+            <article class="booking-card">
+                <form id="spa-booking-form" class="booking-form">
+                    <fieldset class="form-group">
+                        <label for="treatment-type">Treatment Type</label>
+                        <select id="treatment-type" name="treatment-type" required>
+                            <option value="">Select a treatment</option>
+                            <optgroup label="Massages">
+                                <option value="signature-massage">Shangri-La Signature Massage</option>
+                                <option value="deep-tissue">Deep Tissue Massage</option>
+                                <option value="hot-stone">Hot Stone Massage</option>
+                                <option value="aromatherapy">Aromatherapy Massage</option>
+                                <option value="swedish">Swedish Massage</option>
+                                <option value="couples">Couples Massage</option>
+                            </optgroup>
+                            <optgroup label="Facials">
+                                <option value="radiance-facial">Shangri-La Radiance Facial</option>
+                                <option value="hydrating">Hydrating Facial</option>
+                                <option value="anti-aging">Anti-Aging Facial</option>
+                                <option value="purifying">Purifying Facial</option>
+                            </optgroup>
+                            <optgroup label="Body Treatments">
+                                <option value="salt-scrub">Sea Salt Body Scrub</option>
+                                <option value="body-wrap">Tropical Body Wrap</option>
+                                <option value="sun-relief">Sun Relief Wrap</option>
+                            </optgroup>
+                            <optgroup label="Nail Services">
+                                <option value="deluxe-manicure">Shangri-La Deluxe Manicure</option>
+                                <option value="deluxe-pedicure">Shangri-La Deluxe Pedicure</option>
+                                <option value="classic-manicure">Classic Manicure</option>
+                                <option value="classic-pedicure">Classic Pedicure</option>
+                            </optgroup>
+                            <optgroup label="Wellness Programs">
+                                <option value="yoga-group">Yoga Session (Group)</option>
+                                <option value="yoga-private">Yoga Session (Private)</option>
+                                <option value="meditation-group">Meditation Session (Group)</option>
+                                <option value="meditation-private">Meditation Session (Private)</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="treatment-date">Preferred Date</label>
+                        <input type="date" id="treatment-date" name="treatment-date" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="treatment-time">Preferred Time</label>
+                        <select id="treatment-time" name="treatment-time" required>
+                            <option value="">Select a time</option>
+                            <option value="9:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="special-requests">Special Requests or Health Concerns</label>
+                        <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group form-submit">
+                        <button type="submit" class="btn btn-primary">Request Appointment</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="footer-info">
+                <h3>Shangri-La Beach Resort</h3>
+                <p>Your dream getaway in Cancun, Mexico offering luxury accommodations and breathtaking views.</p>
+            </section>
+            <nav class="footer-navigation">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Guest Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="activities.html">Activities & Excursions</a></li>
+                    <li><a href="spa.html">Spa</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+            <section class="footer-contact">
+                <h3>Contact Us</h3>
+                <address>
+                    <p>Shangri-La Beach Resort</p>
+                    <p>Zona Hotelera, Cancun</p>
+                    <p>Quintana Roo, Mexico</p>
+                    <p>Email: <a href="#" class="contact-link">info@companymail.com</a></p>
+                    <p>Phone: <a href="#" class="contact-link">+1 123 456 789</a></p>
+                </address>
+            </section>
+            <section class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <section class="newsletter">
+                    <h4>Subscribe to our newsletter</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary" id="btn-subscribe">Subscribe</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="footer-legal">
+            <p>&copy; 2025 Shangri-La Beach Resort. All rights reserved.</p>
+            <p class="attribution">Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a> under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0 license</a>. Icon colors have been modified.</p>
+        </section>
+    </footer>
+
+
+    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js" defer></script>
+</body>
+</html>
