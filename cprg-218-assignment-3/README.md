@@ -59,5 +59,7 @@ seventyfourimages. (n.d.). *Bag massage for metabolism* [Photograph]. Envato Ele
 ## License
 Downloaded images are from a paid subscription with Envato Elements. All images are licensed appropriately under the terms outlined at [Envato License Terms](https://elements.envato.com/license-terms).
 
+Icons are provided by Font Awesome and used under the Font Awesome Free License, which allows for free use with attribution.
+
 All other work is original and created by Angelo Baloso.
 
